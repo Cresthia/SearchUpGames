@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Games</title>
+</head>
+<body onload="FetchData();">
+    <div class="headers-pos">
+        <div class="headers">
+            <div class="logo-pos">
+                <img class="logo" src="games.png" onclick="location.reload();">
+            </div>
+            <div class="search-input-pos">
+                <input placeholder="Game Name" id="search" class="search">
+            </div>
+            <div class="search-btn-pos">
+                <button onclick="FetchData();" class="search-btn">Search</button>
+            </div>
+            <div class="results-pos">
+                <h3 class="results" id="results"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="grid" id="grid">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
